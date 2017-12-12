@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Concert Idol Project</title>
+        <link rel="icon" href="img/nico_yazawa.jpg">
+        <link href = "style.css" rel="stylesheet" type = "text/css"/>
+    </head>
+    
+    <body style = "background: black; background-image: url(img/concert_stage_wallpaper_004.jpg); background-size: cover">
+        
+        <div id = "titlebanner">Welcome To The Concert Idol Project</div>
+    
+        <div id='welcome'>
+            <input type="text" class="titletext" id='yourname' placeholder="Type in your name"/>
+            <input type="text" class="titletext" id='favcolor' placeholder='What is your favourite colour?'/>
+            <button class="titletext" id='letsgobutt'>Let's Go!!!</button>
+        </div>
+        
+        <div class="mainbox" id="main">
+            <div class="mainbutton" id="tenfactsmain">Ten Different Concerts</div>
+            <div class="mainbutton" id='quizmain'>Take the Online Quiz</div>
+            <div class="mainbutton" id="concertstagemain">Enter the Stage</div>
+            <div class="mainbutton" id='referencemain'>Reference</div>
+        </div>
+        
+        <div id="topbar">
+            <div class="topselection" id='tenfactsbutton'>Ten Different Concerts</div>
+            <div class="topselection" id='quizbutton'>Take the Online Quiz</div>
+            <div class="topselection" id="concertstagebutton">Enter the Stage</div>
+            <div class="topselection" id='referencebutton'>Reference</div>
+            <div class="topselection" id="logout">Log Out</div>
+        
+        </div>
+
+        <div class="mainbox" id = "tenfacts">
+            <div id = "selection">
+                <div class ="tenfactselect" id = "AKB48Select">Idols (AKB48)</div>
+                <div class ="tenfactselect" id = "SyntheticSelect">Sythesized</div>
+                <div class ="tenfactselect" id = "RockSelect">Rock</div>
+                <div class ="tenfactselect" id = "JpopSelect">J-pop</div>
+                <div class ="tenfactselect" id = "KpopSelect">K-pop</div>
+                <div class ="tenfactselect" id = "PopSelect">Pop</div>
+                <div class ="tenfactselect" id = "CountrySelect">Country</div>
+                <div class ="tenfactselect" id = "ParodySelect">Parody</div>
+                <div class ="tenfactselect" id = "ClassicalSelect">Classical</div>
+                <div class ="tenfactselect" id = "MetalSelect">Metal</div>
+            </div>
+            
+            <iframe class = "concert" id = "AKB48" width="600" height="350" src="https://www.youtube.com/embed/AA1VAl37-6c" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+            
+            <iframe class="concert" id="rock" width="600" height="350" src="https://www.youtube.com/embed/6tlSx0jkuLM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+            
+            <iframe class="concert" id="Miku" width="600" height="350" src="https://www.youtube.com/embed/FoTd918zhZc" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+            
+            <iframe class ="concert" id="WeirdAl" width="600" height="350" src="https://www.youtube.com/embed/uxyU_LMHPEU" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+            
+            <iframe class ="concert" id="Metallica" width="600" height="350" src="https://www.youtube.com/embed/kV-2Q8QtCY4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+            
+            <iframe class= "concert" id ="Kpop" width="600" height="350" src="https://www.youtube.com/embed/oei8-HAKAsc" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+            
+            <iframe class="concert" id="Jpop" width="600" height="350" src="https://www.youtube.com/embed/5rDhdK0itbQ" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+            
+            <iframe class="concert" id="Country" width="600" height="350" src="https://www.youtube.com/embed/DDkCe2cUHAA" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+            
+            <iframe class="concert" id="Pop" width="600" height="350" src="https://www.youtube.com/embed/Xz-WKZnK_5Y" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+            
+            <iframe class="concert" id="Classical" width="600" height="350" src="https://www.youtube.com/embed/OsOUcikyGRk" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+            
+            
+            <div id= "infobar"></div>
+        </div>
+
+        
+        <div class="mainbox" id = "quiz">
+            <div id="questionbox"></div>
+            <div id= "answerbox">
+                <div class="answers" id="answer1"></div>
+                <div class="answers" id="answer2"></div>
+                <div class="answers" id="answer3"></div>
+                <div class="answers" id="answer4"></div>
+            </div>
+            <div id="quizwelcome">Welcome to the Quiz<br><br> We test your knowledge on the 10 genres of music using 10 different questions. Each question is a multiple choice question and when you reach the end, you will find out how well you did. You may also submit your score to see how well you did against other people.</div>
+            
+            <div id="results"></div>
+            <div class="tenfactselect" id="save">Save Data</div>
+            <div class="tenfactselect" id="load">See Others</div>
+            
+        </div>
+        
+        <div id="Theshow">
+            <iframe id ="Theshowconcert" width="300" height="169" src="https://www.youtube.com/embed/oei8-HAKAsc" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+            <div id= "bottomshowbar">
+                <div class ="concertbuttons" id="exitshow">Exit</div>
+                <div class = "concertbuttons" id ="insertglowsticks">Insert glowsticks</div>
+            </div>
+            <div id="counter">0/50</div>
+            <div id="audience"></div>
+            <div id="howtoconcert">Welcome to the Concert!!!<br><br>In this area, you can do two things:<br> 1) Insert glowsticks based on what your favorite color is (Hint: "random" makes each glowstick a different color).<br>2) You can swing every glowstick around by pressing the spacebar on your keyboard.<br><br>To exit, just click the exit button.</div>
+        </div>
+        
+        <div class="mainbox" id="References">
+            <div id="reftitle">References</div>
+            <a href="https://www.allkpop.com/article/2017/05/largest-k-pop-concert-tours-with-the-biggest-audience/s/" class="references">https://www.allkpop.com/article/2017/05/largest-k-pop-concert-tours-with-the-biggest-audience/s/</a>
+            <a href="https://en.wikipedia.org/wiki/Classical_music" class="references">https://en.wikipedia.org/wiki/Classical_music</a>
+            <a href ="https://en.wikipedia.org/wiki/Hatsune_Miku" class ="references">https://en.wikipedia.org/wiki/Hatsune_Miku</a>
+            <a href = "https://en.wikipedia.org/wiki/AKB48" class = "references">https://en.wikipedia.org/wiki/AKB48</a>
+            <a href = "https://en.wikipedia.org/wiki/Country_music" class="references">https://en.wikipedia.org/wiki/Country_music</a>
+            <a href = "https://en.wikipedia.org/wiki/J-pop" class="references">https://en.wikipedia.org/wiki/J-pop</a>
+            <a href = "https://en.wikipedia.org/wiki/K-pop" class="references">https://en.wikipedia.org/wiki/K-pop</a>
+            <a href = "https://en.wikipedia.org/wiki/Heavy_metal_genres" class="references">https://en.wikipedia.org/wiki/Heavy_metal_genres</a>
+            <a href = "https://en.wikipedia.org/wiki/Heavy_metal_music" class="references">https://en.wikipedia.org/wiki/Heavy_metal_music</a>
+            <a href = "https://en.wikipedia.org/wiki/Rock_music" class="references">https://en.wikipedia.org/wiki/Rock_music</a>
+            <a href = "https://en.wikipedia.org/wiki/Parody_music" class="references">https://en.wikipedia.org/wiki/Parody_music</a>
+            <div id="reftitle">Videos</div>
+            <a href = "https://www.youtube.com/watch?v=AA1VAl37-6c" class="references">https://www.youtube.com/watch?v=AA1VAl37-6c</a>
+            <a href = "https://www.youtube.com/embed/6tlSx0jkuLM" class="references">https://www.youtube.com/embed/6tlSx0jkuLM</a>
+            <a href = "https://www.youtube.com/embed/FoTd918zhZc" class="references">https://www.youtube.com/embed/FoTd918zhZc</a>
+            <a href = "https://www.youtube.com/embed/uxyU_LMHPEU" class="references">https://www.youtube.com/embed/uxyU_LMHPEU</a>
+            <a href = "https://www.youtube.com/embed/kV-2Q8QtCY4" class="references">https://www.youtube.com/embed/kV-2Q8QtCY4</a>
+            <a href = "https://www.youtube.com/embed/oei8-HAKAsc" class="references">https://www.youtube.com/embed/oei8-HAKAsc</a>
+            <a href = "https://www.youtube.com/embed/5rDhdK0itbQ" class="references">https://www.youtube.com/embed/5rDhdK0itbQ</a>
+            <a href = "https://www.youtube.com/embed/DDkCe2cUHAA" class="references">https://www.youtube.com/embed/DDkCe2cUHAA</a>
+            <a href = "https://www.youtube.com/embed/Xz-WKZnK_5Y" class="references">https://www.youtube.com/embed/Xz-WKZnK_5Y</a>
+            <a href = "https://www.youtube.com/embed/OsOUcikyGRk" class="references">https://www.youtube.com/embed/OsOUcikyGRk</a>
+            
+        </div>
+        
+        <div id="curtains"></div>
+    
+        <script src = "java.js"> </script>
+    </body>
+    
+</html>

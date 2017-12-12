@@ -1,0 +1,371 @@
+/*----------------------OPENING SCREEN-------------------------*/
+
+#welcome{
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    position: absolute;
+    margin: auto;
+    width: 50vw;
+    height: 30vh;
+    background-color: darkred;
+    border: 3px solid white;
+    border-color: aliceblue;
+    transition: bottom 1s;
+    display: block;
+    z-index:2;
+}
+
+#titlebanner{
+    font-size: 50px;
+    color: beige;
+    font-style:oblique;
+    z-index: 5;
+    text-align: center;
+    top: 50px;
+    left: 0px;
+    right: 0px;
+    position: absolute;
+    margin: auto;
+    
+    
+}
+
+.titletext{
+    left: 38%;
+    position: absolute;
+}
+
+#yourname{
+    top: 40px;
+}
+#favcolor{
+    top: 70px;
+}
+
+#letsgobutt{
+    top: 100px;
+}
+
+#curtains{
+    background-image:url(img/redcurtains.jpg);
+    background-size:contain;
+    left: 0px;
+    top: 0px;
+    transition: left 2s;
+    width:100vw;
+    height: 100vh;
+    z-index: 1;
+    position:absolute;
+}
+
+/*--------------------------TOP BAR--------------------------------------------*/
+
+#topbar{
+    position:absolute;
+    height: 30px;
+    width: 100vw;
+    top: 20px;
+}
+
+.topselection{
+    position:relative;
+    display:inline-block;
+    background-color: beige;
+    height: 100%;
+    width: 200px;
+    font-family: fantasy;
+    text-align: center;
+    border: 1px black solid;
+    border-radius: 15px;
+}
+
+/*-------------------MAIN-------------------------------------*/
+#main{
+    display: block;
+}
+
+.mainbox{
+    display: none;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    margin: auto;
+    position: absolute;
+    height: 85vh;
+    width: 100vw;
+}
+
+.mainbutton{
+    position:relative;
+    display:inline-block;
+    background-color: beige;
+    height: 50px;
+    width: 500px;
+    font-family: fantasy;
+    text-align: center;
+    border: 1px black solid;
+    border-radius: 40px;
+    margin: 10px;
+}
+
+
+
+/*---------------ADDITIVE EVENTS-----------------------------------*/
+
+.glowsticks{
+    height:27px;
+    width:10px;
+    position: absolute;
+    background-image:url(img/lightsticks.png);
+    background-color: lightgreen;
+    transition: all 0.1s ease-in-out;
+}
+
+
+/*----------------------10 FACTS--------------------------------------------*/
+
+#selection{
+    height: 50%;
+    width: 50%;
+    left:0px;
+    top: 0px;
+    text-align: center;
+}
+
+.tenfactselect{
+    height: 30px;
+    width: 200px;
+    text-align: center;
+    left: 50px;
+    background-color: antiquewhite;
+    border: 1px black solid;
+    border-radius: 15px;
+    margin: 5px;
+    position: relative;
+    font-family: fantasy;
+}
+
+#infobar{
+    bottom: 10px;
+    font: 20px oblique;
+    font-family:cursive;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    display: block;
+    height: 25vh;
+    width: 80vw;
+    background-color: beige;
+    opacity: 0.75;
+    position: absolute;
+    border: dotted 3px brown;
+    border-radius: 20px;
+    
+}
+
+.concert{
+    position:absolute;
+    top:0px;
+    right:350px;
+    margin:auto;
+    border: 5px solid brown;
+    display:none;
+}
+
+/*----------------------------------QUIZ-------------------------------------*/
+
+#questionbox{
+    height: 40%;
+    width: 80%;
+    text-align: center;
+    left:0px;
+    top:0px;
+    right:0px;
+    background-color: antiquewhite;
+    border: 5px brown solid;
+    border-radius: 15px;
+    margin: auto;
+    position: absolute;
+    font-family: fantasy;
+    font-size: 40px;
+    
+}
+
+#answerbox{
+    height: 50%;
+    width: 60%;
+    left:0px;
+    right: 0px;
+    bottom: 20px;
+    margin: auto;
+    position: absolute;
+    font-family: fantasy;
+}
+
+.answers{
+    width: 40%;
+    height: 40%;
+    position: relative;
+    border: 5px brown solid;
+    margin: 2%;
+    font-family: cursive;
+    border-radius: 15px;
+    display: inline-block;
+    background-color: beige;
+    text-align: center;
+}
+
+#quizwelcome{
+    width: 40%;
+    height: 40%;
+    left:0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    position: absolute;
+    border: 5px brown solid;
+    margin: auto;
+    font-family: cursive;
+    border-radius: 15px;
+    display: inline-block;
+    background-color: beige;
+    text-align: center;
+}
+#results{
+    width: 500px;
+    height: 300px;
+    left:0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    position: absolute;
+    border: 5px brown solid;
+    margin: auto;
+    font-family: cursive;
+    border-radius: 15px;
+    display: none;
+    background-color: beige;
+    text-align: center;
+    overflow-y: scroll;
+}
+
+#save{
+    position: absolute;
+    bottom: 50px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    display: none;
+}
+
+#load{
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    display: none;
+}
+
+/*--------------------------------------THE CONCERT---------------------------------*/
+
+
+#Theshow{
+    display:none;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    margin:auto;
+    background-color: black;
+    background-image: url(img/concert.jpeg);
+    background-size: cover;
+    background-position: 0px -150px;
+    height:90vh;
+    width:85vw;
+}
+
+#Theshowconcert{
+    position:absolute;
+    top:205px;
+    right:0px;
+    left:0px;
+    margin:auto;
+    z-index:5;
+}
+#bottomshowbar{
+    bottom: 5px;
+    position:absolute;
+    height: 30px;
+}
+
+.concertbuttons{
+    height: 30px;
+    width: 200px;
+    text-align: center;
+    left: 50px;
+    background-color: antiquewhite;
+    border: 1px black solid;
+    border-radius: 15px;
+    z-index: 5;
+    margin: 5px;
+    position: relative;
+    display: inline-block;
+}
+
+#counter{
+    color:beige;
+    position: absolute;
+    top:0px;
+    left:0px;
+    font-size: 15px;
+    font-family: fantasy;
+    z-index: 2;
+}
+
+#audience{
+    position:absolute;
+    bottom: 0px;
+    width:inherit;
+    height:33%
+}
+
+#howtoconcert{
+    position:absolute;
+    top:0px;
+    bottom: 0px;
+    left:0px;
+    right:0px;
+    margin:auto;
+    height: 50%;
+    width: 85%;
+    background-color: beige;
+    border-radius: 30px;
+    border: 5px solid brown;
+    z-index: 10;
+    font-family: cursive;
+    text-align: center;
+    font-size: 20px;
+    
+}
+
+/*--------------REFERENCES---------------------------*/
+
+#reftitle{
+    font-size: 40px;
+    color: antiquewhite;
+    margin:5px;
+}
+
+.references{
+    width: 50vw;
+    height: 20px;
+    left: 10px;
+    background-color: beige;
+    font-family:sans-serif;
+    display: block;
+    
+    
+}
